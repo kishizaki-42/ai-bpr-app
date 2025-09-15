@@ -1,0 +1,4 @@
+-- Seed demo data
+INSERT INTO "User" (id,email,name,role,skill_level,passwordHash,created_at,updated_at) VALUES ('7b865a09-eeda-4689-be44-308240f175b5','demo@example.com','デモユーザー','learner',0,'$2a$10$aNuemsVoIq5pYt7nfulDx.MW8p0j/Fzun5VQnbZA/3QkTS7HFaFoe',CURRENT_TIMESTAMP,CURRENT_TIMESTAMP);
+INSERT INTO "LearningContent" (id,title,content_type,difficulty,content_data_text,ai_topics_text,estimated_time,created_at) VALUES ('58316a06-0f73-4592-ae67-8603970dc1b9','BPR基礎入門','article','beginner','{"outline":["BPRとは","AI活用の基本"]}','LLM基礎',30,CURRENT_TIMESTAMP);
+INSERT INTO "LearningContent" (id,title,content_type,difficulty,content_data_text,ai_topics_text,estimated_time,created_at) VALUES ('119ae36b-cb2f-4841-9d6c-6a4eaf22327c','現状分析のフレーム','exercise','intermediate','{"steps":["AsIs整理","ボトルネック抽出"]}','ベクトル検索',45,CURRENT_TIMESTAMP);
